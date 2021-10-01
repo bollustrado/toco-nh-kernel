@@ -5,7 +5,7 @@ config NETHUNTER_SUPPORT
 	bool "Basic nethunter support"
 
 	default n
-
+	
 	depends on !ANDROID_BINDERFS
 
 	help
