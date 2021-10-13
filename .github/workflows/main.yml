@@ -18,5 +18,5 @@ jobs:
         upstream_repo: https://github.com/vantoman/kernel_xiaomi_sm6150.git
         upstream_branch: eleven
         local_branch: main
-	github_token: ${{ secrets.GITHUB_TOKEN }}
+	      github_token: ${{ secrets.GITHUB_TOKEN }}
 
