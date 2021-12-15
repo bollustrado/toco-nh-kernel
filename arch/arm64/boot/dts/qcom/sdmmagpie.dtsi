@@ -1,4 +1,4 @@
-/* Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2018-2021, The Linux Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -403,8 +403,7 @@
 				1939200	1362
 				2169600	1801
 				2208000	2000
-				2361600	2326
-				2400000	2568
+				2304000	2326
 			>;
 			idle-cost-data = <
 				100 80 60 40
@@ -444,8 +443,7 @@
 				1939200	50
 				2169600	60
 				2208000	61
-				2361600	62
-				2400000	63
+				2304000	62
 			>;
 			idle-cost-data = <
 				5 4 3 2 1
