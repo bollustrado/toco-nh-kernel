@@ -134,3 +134,4 @@ Android.bp
 out*
 *.zip
 *.ko
+*.log

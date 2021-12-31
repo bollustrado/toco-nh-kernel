@@ -245,3 +245,68 @@ make[1]: Entering directory '/root/toco-nh-kernel/out'
   AR      arch/arm64/crypto/ghash-ce.o
   AS      firmware/goodix_gt9886_cfg_f4.bin.gen.o
   AR      arch/arm64/mm/built-in.o
+  CC      drivers/android/binder_alloc.o
+  AR      arch/arm64/crypto/aes-ce-cipher.o
+  AS      firmware/goodix_gt9886_fw_f4.bin.gen.o
+  CC      crypto/skcipher.o
+  AR      arch/arm64/crypto/aes-ce-ccm.o
+  CC      sound/core/init.o
+  AR      arch/arm64/crypto/aes-ce-blk.o
+  AR      firmware/built-in.o
+  CC      security/apparmor/match.o
+  AR      arch/arm64/crypto/aes-neon-blk.o
+  AS      arch/arm64/crypto/sha256-core.o
+  CC      ipc/syscall.o
+  AR      drivers/../extra_tools/drivers/rtl8188fu-aircrack/built-in.o
+  CC [M]  drivers/../extra_tools/drivers/rtl8188fu-aircrack/core/rtw_cmd.o
+  CC      arch/arm64/kernel/cpu_ops.o
+  AR      arch/arm64/crypto/aes-arm64.o
+  CC      kernel/sysctl.o
+  CC      security/keys/keyring.o
+  AR      arch/arm64/crypto/sha256-arm64.o
+  CC      block/blk-tag.o
+  AR      arch/arm64/crypto/built-in.o
+rm arch/arm64/crypto/sha256-core.S
+  CC      crypto/seqiv.o
+  CC      fs/exec.o
+  CC      crypto/echainiv.o
+  CC      security/apparmor/path.o
+  AR      drivers/auxdisplay/built-in.o
+  CC      sound/core/memory.o
+  CC      ipc/ipc_sysctl.o
+  CC [M]  drivers/../extra_tools/drivers/rtl8188eus/core/rtw_debug.o
+  CC      arch/arm64/kernel/insn.o
+  CC      crypto/ahash.o
+  CC      mm/page-writeback.o
+  AR      drivers/android/built-in.o
+  CC      sound/core/control.o
+  CC      block/blk-sysfs.o
+  CC      ipc/mqueue.o
+  CC      security/keys/keyctl.o
+  CC [M]  drivers/../extra_tools/drivers/rtl8188fu-aircrack/core/rtw_security.o
+  AR      sound/drivers/mpu401/built-in.o
+  CC      kernel/sysctl_binary.o
+  AR      sound/drivers/opl3/built-in.o
+  CC      arch/arm64/kernel/return_address.o
+  AR      sound/drivers/opl4/built-in.o
+  CC      security/apparmor/domain.o
+  AR      sound/drivers/pcsp/built-in.o
+  AR      sound/drivers/vx/built-in.o
+  AR      sound/drivers/built-in.o
+  CC      mm/readahead.o
+  CC      block/blk-flush.o
+  GEN     security/selinux/flask.h security/selinux/av_permissions.h
+  CC      crypto/shash.o
+  CC      security/selinux/avc.o
+  CC      fs/pipe.o
+  AR      drivers/../extra_tools/drivers/rtl8192eu-linux-driver/built-in.o
+  CC [M]  drivers/../extra_tools/drivers/rtl8192eu-linux-driver/core/rtw_cmd.o
+  CC      sound/core/misc.o
+  CC      security/keys/permission.o
+  CC [M]  drivers/../extra_tools/drivers/rtl8188eus/core/rtw_io.o
+  CC      arch/arm64/kernel/cpuinfo.o
+  CC      arch/arm64/kernel/cpu_errata.o
+  CC      kernel/capability.o
+  CC [M]  drivers/../extra_tools/drivers/rtl8188fu-aircrack/core/rtw_debug.o
+  CC      ipc/namespace.o
+  CC      techpack/audio/asoc/codecs/bolero/bolero-cdc.o
