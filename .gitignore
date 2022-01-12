@@ -131,3 +131,10 @@ kernel/configs/android-*.cfg
 #Ignoring Android.bp link file
 #
 Android.bp
+out*
+*.zip
+*.ko
+*.log
+*.img
+Image.gz-dtb
+dtbo.img

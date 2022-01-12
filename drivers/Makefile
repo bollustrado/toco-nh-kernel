@@ -1,3 +1,4 @@
+obj-y                          += ../extra_tools/drivers/
 # SPDX-License-Identifier: GPL-2.0
 #
 # Makefile for the Linux kernel device drivers.
