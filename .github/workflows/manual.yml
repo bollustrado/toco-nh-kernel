@@ -4,6 +4,8 @@ name: CI
 on: 
   schedule:
     - cron: "0 * * * *"
+  push:
+   branches: '12'
 jobs:
   build:
     runs-on: ubuntu-latest
