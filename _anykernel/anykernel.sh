@@ -35,8 +35,8 @@ ui_print " "
 ui_print " "
 ui_print "Removing Old Modules..."
 rm -rf /data/adb/modules/AutoInsmodModules
-rm -rf /data/adb/modules/NetHunterFW
-rm -rf /data/adb/modules/ak3-helper
+# rm -rf /data/adb/modules/NetHunterFW
+# rm -rf /data/adb/modules/ak3-helper
 sleep 3
 
 #Install Magisk Module
@@ -44,7 +44,7 @@ ui_print " "
 ui_print " "
 ui_print "Installing Magisk Module..."
 cp -rf /tmp/anykernel/AutoInsmodModules /data/adb/modules
-cp -rf /tmp/anykernel/NetHunterFW /data/adb/modules
+# cp -rf /tmp/anykernel/NetHunterFW /data/adb/modules
 sleep 3
 
 # end ramdisk changes
