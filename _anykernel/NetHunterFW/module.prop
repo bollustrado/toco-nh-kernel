@@ -1,6 +1,0 @@
-id=NetHunterFW
-name=Wireless Firmware for Nethunter
-version=v1.0
-versionCode=10
-author=b1ackm3sa
-description=This module adds the required firmware for external wireless adapters and SDR devices to be used with NetHunter.
