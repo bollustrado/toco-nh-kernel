@@ -130,6 +130,7 @@ kernel/configs/android-*.cfg
 #
 #Ignoring Android.bp link file
 #
+*.rej
 Android.bp
 out*
 *.zip
