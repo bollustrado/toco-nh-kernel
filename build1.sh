@@ -3,7 +3,7 @@
 export ARCH=arm64
 export SUBARCH=arm64
 export DTC_EXT=dtc
-export PATH="$HOME/dev/proton-clang/bin:$HOME/dev/aarch64-linux-gnu/bin:${PATH}"
+#export PATH="$HOME/dev/proton-clang/bin:$HOME/dev/aarch64-linux-gnu/bin:${PATH}"
 export CC=clang
 export CROSS_COMPILE=aarch64-linux-gnu-
 export CROSS_COMPILE_ARM32=arm-linux-gnueabi-
@@ -29,8 +29,8 @@ mkdir out
 
 echo DEFCONFIG
 PATH="$HOME/dev/proton-clang/bin:$HOME/dev/aarch64-linux-gnu/bin:${PATH}" \
-make CROSS_COMPILE=aarch64-linux-gnu- O=out CC=clang ARCH=arm64 toco_nh_defconfig
-#make  O=out ARCH=arm64 toco_defconfig
+make  O=out ARCH=arm64 toco_nh_defconfig
+#make  O=out CC=clang ARCH=arm64 toco_nh3_defconfig
 
 echo MENUCONFIG
 PATH="$HOME/dev/proton-clang/bin:$HOME/dev/aarch64-linux-gnu/bin:${PATH}" \
@@ -42,7 +42,7 @@ PATH="$HOME/dev/proton-clang/bin:$HOME/dev/aarch64-linux-gnu/bin:${PATH}" \
 make -j16 O=out \
                       ARCH=arm64 \
                       CC=clang \
-		      CROSS_COMPILE=aarch64-linux-gnu- \
+                      CROSS_COMPILE=aarch64-linux-gnu- \
                       CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
                       NM=llvm-nm \
                       OBJCOPY=llvm-objcopy \
@@ -51,11 +51,11 @@ make -j16 O=out \
 		      USE_CCACHE=1 \
 		      CCACHE_DIR=~/.ccache \
                       LD=ld.lld | tee kernel.log
-# 
+
 # make modules_install -j16 O=out \
 #                       ARCH=arm64 \
 #                       CC=clang \
-# 		      CROSS_COMPILE=aarch64-linux-gnu- \
+#                       CROSS_COMPILE=aarch64-linux-gnu- \
 #                       CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
 #                       NM=llvm-nm \
 #                       OBJCOPY=llvm-objcopy \
@@ -68,7 +68,7 @@ make -j16 O=out \
 # make headers_install -j16 O=out \
 #                       ARCH=arm64 \
 #                       CC=clang \
-# 		      CROSS_COMPILE=aarch64-linux-gnu- \
+#                       CROSS_COMPILE=aarch64-linux-gnu- \
 #                       CROSS_COMPILE_ARM32=arm-linux-gnueabi- \
 #                       NM=llvm-nm \
 #                       OBJCOPY=llvm-objcopy \
@@ -79,7 +79,7 @@ make -j16 O=out \
 #                       LD=ld.lld
 
 
-cp out/arch/arm64/boot/Image.gz-dtb _anykernel/
+cp out/arch/arm64/boot/Image.$COMPRESSION-dtb _anykernel/
 cp out/arch/arm64/boot/dtbo.img _anykernel/
 for mod in $(find out/ -name *.ko)
     do cp $mod _anykernel/modules/system/lib/modules/
